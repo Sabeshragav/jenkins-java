@@ -10,13 +10,13 @@ pipeline {
 
         stage('Compile Java') {
             steps {
-                sh 'javac hw.java'
+                bat 'javac hw.java'
             }
         }
 
         stage('Run Java') {
             steps {
-                sh 'java hw'
+                bat 'java hw'
             }
         }
     }
