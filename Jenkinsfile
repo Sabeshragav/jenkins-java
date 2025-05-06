@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Sabeshragav/jenkins-java.git'
+                git branch: 'main', url: 'https://github.com/Sabeshragav/jenkins-java.git'
             }
-        }
+        }   
 
         stage('Compile Java') {
             steps {
