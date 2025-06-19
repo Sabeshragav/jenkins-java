@@ -1,7 +1,11 @@
 pipeline {
     agent any
 
-    
+    tools {
+        // Make sure you have configured Gradle in Jenkins Global Tool Configuration with this exact name
+        gradle 'Gradle'
+        jdk 'JDK-21'
+    }
 
     stages {
         stage('Clone Repository') {
